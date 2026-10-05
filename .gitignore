@@ -3,4 +3,5 @@ node_modules/
 dist/
 .env
 *.log
-"@ | Out-File -Encoding utf8 .gitignore
+"@ | Out-File -Encoding utf8 .gitignoreusers_db.json
+temp-react-app/
