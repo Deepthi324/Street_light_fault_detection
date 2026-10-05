@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test</title>
+</head>
+<body>
+    <h1>Testing API from Browser</h1>
+    <button onclick="testSignup()">Test Signup</button>
+    <div id="result"></div>
+    
+    <script>
+        async function testSignup() {
+            const data = {
+                fullName: "Browser Test",
+                email: "browser@test.com", 
+                password: "123456",
+                confirmPassword: "123456",
+                role: "citizen"
+            };
+            
+            try {
+                const response = await fetch('http://localhost:4003/api/auth/signup', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                });
+                
+                const result = await response.json();
+                document.getElementById('result').innerHTML = JSON.stringify(result, null, 2);
+            } catch (error) {
+                document.getElementById('result').innerHTML = 'ERROR: ' + error.message;
+            }
+        }
+    </script>
+</body>
+</html>

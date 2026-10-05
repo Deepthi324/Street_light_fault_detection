@@ -1,0 +1,112 @@
+[
+  {
+    "complaint_id": 2,
+    "user_id": 6,
+    "pole_id": 1,
+    "complaint_text": "regrsgtrtergreyer",
+    "status": "DECLINED",
+    "authority_response": null,
+    "response_time": "2026-02-19T05:41:51.000Z",
+    "authority_id": 12,
+    "complaint_time": "2026-02-12T07:24:11.000Z"
+  },
+  {
+    "complaint_id": 3,
+    "user_id": 6,
+    "pole_id": 1,
+    "complaint_text": "skfgesgfbjdxbgusegfkzd",
+    "status": "OPEN",
+    "authority_response": null,
+    "response_time": null,
+    "authority_id": null,
+    "complaint_time": "2026-02-12T15:02:50.000Z"
+  },
+  {
+    "complaint_id": 4,
+    "user_id": 6,
+    "pole_id": 1,
+    "complaint_text": "Test complaint from reproduction script",
+    "status": "RESOLVED",
+    "authority_response": null,
+    "response_time": "2026-02-12T19:07:34.000Z",
+    "authority_id": 12,
+    "complaint_time": "2026-02-12T18:20:33.000Z"
+  },
+  {
+    "complaint_id": 5,
+    "user_id": 13,
+    "pole_id": 2,
+    "complaint_text": "aeresrtgfc",
+    "status": "RESOLVED",
+    "authority_response": null,
+    "response_time": "2026-02-13T03:30:40.000Z",
+    "authority_id": 12,
+    "complaint_time": "2026-02-12T18:24:36.000Z"
+  },
+  {
+    "complaint_id": 6,
+    "user_id": 6,
+    "pole_id": 1,
+    "complaint_text": "Test complaint from reproduction script",
+    "status": "RESOLVED",
+    "authority_response": null,
+    "response_time": "2026-02-12T19:24:37.000Z",
+    "authority_id": 12,
+    "complaint_time": "2026-02-12T18:28:14.000Z"
+  },
+  {
+    "complaint_id": 7,
+    "user_id": 6,
+    "pole_id": 1,
+    "complaint_text": "jyhtgrefad",
+    "status": "RESOLVED",
+    "authority_response": null,
+    "response_time": "2026-02-13T03:21:27.000Z",
+    "authority_id": 12,
+    "complaint_time": "2026-02-12T18:40:51.000Z"
+  },
+  {
+    "complaint_id": 8,
+    "user_id": 6,
+    "pole_id": 2,
+    "complaint_text": "szrxdgcgfvghb",
+    "status": "IN_PROGRESS",
+    "authority_response": null,
+    "response_time": "2026-02-17T04:29:19.000Z",
+    "authority_id": 12,
+    "complaint_time": "2026-02-17T04:25:33.000Z"
+  },
+  {
+    "complaint_id": 9,
+    "user_id": 6,
+    "pole_id": 1,
+    "complaint_text": "zxcvbnm,fghj",
+    "status": "RESOLVED",
+    "authority_response": null,
+    "response_time": "2026-02-17T04:29:02.000Z",
+    "authority_id": 12,
+    "complaint_time": "2026-02-17T04:26:57.000Z"
+  },
+  {
+    "complaint_id": 10,
+    "user_id": 6,
+    "pole_id": 1,
+    "complaint_text": "asdfghjkliuytfdcvbnjk",
+    "status": "RESOLVED",
+    "authority_response": null,
+    "response_time": "2026-02-18T15:24:56.000Z",
+    "authority_id": 12,
+    "complaint_time": "2026-02-18T15:24:23.000Z"
+  },
+  {
+    "complaint_id": 11,
+    "user_id": 6,
+    "pole_id": 1,
+    "complaint_text": "magical world",
+    "status": "IN_PROGRESS",
+    "authority_response": null,
+    "response_time": "2026-02-19T05:43:02.000Z",
+    "authority_id": 12,
+    "complaint_time": "2026-02-19T05:42:30.000Z"
+  }
+]

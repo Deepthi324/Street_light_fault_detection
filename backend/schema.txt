@@ -1,0 +1,10 @@
+Field	Type	Null	Key	Default	Extra
+complaint_id	int	NO	PRI	NULL	auto_increment
+user_id	int	NO	MUL	NULL	
+pole_id	int	YES	MUL	NULL	
+complaint_text	text	NO		NULL	
+status	varchar(32)	YES		OPEN	
+authority_response	text	YES		NULL	
+response_time	datetime	YES		NULL	
+authority_id	int	YES	MUL	NULL	
+complaint_time	timestamp	YES		CURRENT_TIMESTAMP	DEFAULT_GENERATED

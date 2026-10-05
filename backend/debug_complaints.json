@@ -1,0 +1,46 @@
+[
+  {
+    "complaint_id": 2,
+    "user_id": 6,
+    "pole_id": 1,
+    "complaint_text": "regrsgtrtergreyer",
+    "status": "IN_PROGRESS",
+    "authority_response": null,
+    "response_time": "2026-02-12T15:12:09.000Z",
+    "authority_id": 12,
+    "complaint_time": "2026-02-12T07:24:11.000Z"
+  },
+  {
+    "complaint_id": 3,
+    "user_id": 6,
+    "pole_id": 1,
+    "complaint_text": "skfgesgfbjdxbgusegfkzd",
+    "status": "OPEN",
+    "authority_response": null,
+    "response_time": null,
+    "authority_id": null,
+    "complaint_time": "2026-02-12T15:02:50.000Z"
+  },
+  {
+    "complaint_id": 4,
+    "user_id": 6,
+    "pole_id": 1,
+    "complaint_text": "Test complaint from reproduction script",
+    "status": "PENDING",
+    "authority_response": null,
+    "response_time": null,
+    "authority_id": null,
+    "complaint_time": "2026-02-12T18:20:33.000Z"
+  },
+  {
+    "complaint_id": 5,
+    "user_id": 13,
+    "pole_id": 2,
+    "complaint_text": "aeresrtgfc",
+    "status": "PENDING",
+    "authority_response": null,
+    "response_time": null,
+    "authority_id": null,
+    "complaint_time": "2026-02-12T18:24:36.000Z"
+  }
+]

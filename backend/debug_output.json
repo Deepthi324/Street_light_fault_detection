@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "full_name": "Test Authority",
+    "email": "test.auth1770823330841@example.com",
+    "role": "authority",
+    "maintenance_team_id": null
+  },
+  {
+    "id": 3,
+    "full_name": "buddy",
+    "email": "pal123@gmail.com",
+    "role": "authority",
+    "maintenance_team_id": null
+  },
+  {
+    "id": 4,
+    "full_name": "Test Authority",
+    "email": "auth_1770825304022@city.gov",
+    "role": "authority",
+    "maintenance_team_id": null
+  },
+  {
+    "id": 5,
+    "full_name": "Test Citizen",
+    "email": "citizen_1770825304800@example.com",
+    "role": "citizen",
+    "maintenance_team_id": null
+  },
+  {
+    "id": 6,
+    "full_name": "citizen",
+    "email": "pal123456@gmail.com",
+    "role": "citizen",
+    "maintenance_team_id": null
+  },
+  {
+    "id": 7,
+    "full_name": "Buddy",
+    "email": "pal1234@gmail.com",
+    "role": "authority",
+    "maintenance_team_id": null
+  },
+  {
+    "id": 8,
+    "full_name": "Test Authority",
+    "email": "test.auth1770869973404@example.com",
+    "role": "authority",
+    "maintenance_team_id": null
+  },
+  {
+    "id": 10,
+    "full_name": "Buddy1",
+    "email": "pal12345@gmail.com",
+    "role": "citizen",
+    "maintenance_team_id": null
+  },
+  {
+    "id": 11,
+    "full_name": "Buddy2",
+    "email": "pal1234567@gmail.com",
+    "role": "maintenance",
+    "maintenance_team_id": null
+  },
+  {
+    "id": 12,
+    "full_name": "Buddy3",
+    "email": "buddy1234567@gmail.com",
+    "role": "authority",
+    "maintenance_team_id": null
+  },
+  {
+    "id": 13,
+    "full_name": "Buddy3",
+    "email": "pal12345678@gmail.com",
+    "role": "citizen",
+    "maintenance_team_id": null
+  },
+  {
+    "id": 14,
+    "full_name": "Buddy3",
+    "email": "pal123456789@gmail.com",
+    "role": "authority",
+    "maintenance_team_id": null
+  }
+]

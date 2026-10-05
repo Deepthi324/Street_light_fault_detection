@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>React-like API Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .form-group {
+            margin: 10px 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input,
+        select {
+            width: 300px;
+            padding: 8px;
+            margin-bottom: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .success {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Signup Test (React-like)</h1>
+    <form id="signupForm">
+        <div class="form-group">
+            <label>Full Name:</label>
+            <input type="text" id="fullName" value="React Test" required>
+        </div>
+        <div class="form-group">
+            <label>Email:</label>
+            <input type="email" id="email" value="react@test.com" required>
+        </div>
+        <div class="form-group">
+            <label>Password:</label>
+            <input type="password" id="password" value="123456" required>
+        </div>
+        <div class="form-group">
+            <label>Confirm Password:</label>
+            <input type="password" id="confirmPassword" value="123456" required>
+        </div>
+        <div class="form-group">
+            <label>Role:</label>
+            <select id="role">
+                <option value="citizen">Citizen</option>
+                <option value="maintenance">Maintenance Staff</option>
+                <option value="authority">Municipal Authority</option>
+            </select>
+        </div>
+        <button type="submit">Create Account</button>
+    </form>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = {
+                fullName: document.getElementById('fullName').value,
+                email: document.getElementById('email').value,
+                password: document.getElementById('password').value,
+                confirmPassword: document.getElementById('confirmPassword').value,
+                role: document.getElementById('role').value
+            };
+
+            console.log('🚀 React-like form submitting:', formData);
+
+            try {
+                const response = await fetch('http://localhost:4003/api/auth/signup', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData),
+                });
+
+                const data = await response.json();
+                console.log('📥 Response received:', data);
+
+                const resultDiv = document.getElementById('result');
+                if (response.ok) {
+                    resultDiv.innerHTML = `<div class="success">✅ SUCCESS: ${data.message}</div>`;
+                } else {
+                    resultDiv.innerHTML = `<div class="error">❌ ERROR: ${data.message}</div>`;
+                }
+
+            } catch (error) {
+                console.error('❌ Network error:', error);
+                document.getElementById('result').innerHTML = `<div class="error">❌ NETWORK ERROR: ${error.message}</div>`;
+            }
+        });
+    </script>
+</body>
+
+</html>
