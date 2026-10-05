@@ -1,0 +1,293 @@
+/* 
+ * GLOBAL THEME OVERRIDE - DECISIVE FIX
+ * This file will override ALL existing styles
+ * Import this FIRST in index.js or App.js
+ */
+
+/* FORCE LIGHT THEME */
+:root {
+  --bg-primary: #f8fafc !important;
+  --bg-card: #ffffff !important;
+  --bg-table: #ffffff !important;
+  --text-primary: #111827 !important;
+  --text-secondary: #374151 !important;
+  --header-bg: #1f3a8a !important;
+  --header-text: #ffffff !important;
+  --border-color: #e5e7eb !important;
+  --hover-bg: #e0f2fe !important;
+  --alternating-row: #f9fafb !important;
+  
+  /* Status Colors */
+  --status-green: #16a34a !important;
+  --status-red: #dc2626 !important;
+  --status-orange: #ea580c !important;
+  --status-text: #ffffff !important;
+}
+
+/* GLOBAL BODY OVERRIDE */
+body {
+  background: #f8fafc !important;
+  color: #111827 !important;
+  font-family: system-ui, -apple-system, sans-serif !important;
+}
+
+/* REMOVE ALL DARK GRADIENTS */
+* {
+  background-image: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+/* CARD AND TABLE FORCED STYLES */
+.card, .section, .module, .stat-card, .summary-card,
+.table-container, .data-table, .form-section {
+  background: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  color: #111827 !important;
+}
+
+/* TABLE FORCED STYLES */
+.data-table {
+  background: #ffffff !important;
+  border-collapse: collapse !important;
+  width: 100% !important;
+}
+
+.data-table th {
+  background: #1f3a8a !important;
+  color: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  padding: 12px !important;
+  text-align: left !important;
+  font-weight: 600 !important;
+}
+
+.data-table td {
+  background: #ffffff !important;
+  color: #111827 !important;
+  border: 1px solid #e5e7eb !important;
+  padding: 12px !important;
+}
+
+.data-table tr:nth-child(even) td {
+  background: #f9fafb !important;
+}
+
+.data-table tr:hover td {
+  background: #e0f2fe !important;
+  color: #111827 !important;
+}
+
+/* STATUS BADGES FORCED */
+.status-badge, .status-active, .status-faulty, .status-maintenance,
+.priority-high, .priority-medium, .priority-low,
+.type-critical, .type-warning, .type-success, .type-info,
+.battery-good, .battery-medium, .battery-low {
+  background: #16a34a !important;
+  color: #ffffff !important;
+  border: none !important;
+  padding: 4px 12px !important;
+  border-radius: 12px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+
+.status-faulty, .priority-high, .type-critical, .battery-low {
+  background: #dc2626 !important;
+}
+
+.status-maintenance, .priority-medium, .type-warning, .battery-medium {
+  background: #ea580c !important;
+}
+
+/* HEADER FORCED STYLES */
+.dashboard-header, .header-content, h1, h2, h3, h4, h5, h6 {
+  background: #1f3a8a !important;
+  color: #ffffff !important;
+}
+
+.dashboard-header h1, .header-content h1 {
+  color: #ffffff !important;
+}
+
+.module h2, .section h2 {
+  background: transparent !important;
+  color: #111827 !important;
+  border-bottom: 2px solid #1f3a8a !important;
+  padding-bottom: 8px !important;
+}
+
+/* BUTTON FORCED STYLES */
+.btn, .back-btn, .logout-btn, .filter-btn, .mark-read-btn {
+  background: #1f3a8a !important;
+  color: #ffffff !important;
+  border: 1px solid #1f3a8a !important;
+  padding: 8px 16px !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+  font-weight: 500 !important;
+  transition: background-color 0.2s !important;
+}
+
+.btn:hover, .back-btn:hover, .logout-btn:hover, 
+.filter-btn:hover, .mark-read-btn:hover {
+  background: #1e40af !important;
+  color: #ffffff !important;
+}
+
+.back-btn {
+  background: #6b7280 !important;
+  border-color: #6b7280 !important;
+}
+
+.back-btn:hover {
+  background: #4b5563 !important;
+}
+
+/* NAVIGATION FORCED */
+.nav-item {
+  background: transparent !important;
+  color: #374151 !important;
+  border: 1px solid #e5e7eb !important;
+}
+
+.nav-item:hover {
+  background: #f3f4f6 !important;
+  color: #1f3a8a !important;
+}
+
+.nav-item.active {
+  background: #1f3a8a !important;
+  color: #ffffff !important;
+}
+
+/* SIDEBAR FORCED */
+.sidebar {
+  background: #ffffff !important;
+  border-right: 1px solid #e5e7eb !important;
+}
+
+/* MAIN CONTENT FORCED */
+.main-content, .dashboard-content {
+  background: #f8fafc !important;
+  color: #111827 !important;
+}
+
+/* FORM FORCED */
+.form-control, input, select, textarea {
+  background: #ffffff !important;
+  color: #111827 !important;
+  border: 1px solid #e5e7eb !important;
+  padding: 8px 12px !important;
+  border-radius: 4px !important;
+}
+
+.form-control:focus, input:focus, select:focus, textarea:focus {
+  border-color: #1f3a8a !important;
+  outline: 2px solid #1f3a8a !important;
+  outline-offset: 2px !important;
+}
+
+/* LIVE INDICATOR FORCED */
+.live-indicator {
+  background: #dcfce7 !important;
+  color: #166534 !important;
+  border: 1px solid #16a34a !important;
+  padding: 8px 16px !important;
+  border-radius: 20px !important;
+}
+
+.live-dot {
+  background: #16a34a !important;
+}
+
+/* REMOVE ALL OPACITY AND TRANSPARENCY */
+* {
+  opacity: 1 !important;
+}
+
+/* ENSURE TEXT READABILITY */
+p, span, div, td, th, li, a {
+  color: inherit !important;
+}
+
+/* CRITICAL ROWS */
+.critical-row, .urgent-row {
+  background: #fef2f2 !important;
+}
+
+.critical-row:hover, .urgent-row:hover {
+  background: #fee2e2 !important;
+}
+
+/* BACK BUTTON FORCED STYLING */
+.module-header {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+  margin-bottom: 24px !important;
+  padding-bottom: 16px !important;
+  border-bottom: 1px solid #e5e7eb !important;
+}
+
+.back-btn {
+  background: #6b7280 !important;
+  color: #ffffff !important;
+  border: 1px solid #6b7280 !important;
+  padding: 8px 16px !important;
+  border-radius: 6px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.back-btn:hover {
+  background: #4b5563 !important;
+  color: #ffffff !important;
+}
+
+/* HIDDEN ELEMENTS */
+.shadow, .shadow-sm, .shadow-md, .shadow-lg, .shadow-xl {
+  box-shadow: none !important;
+}
+
+/* FORCE ALL TEXT TO BE DARK */
+* {
+  color: #111827 !important;
+}
+
+/* EXCEPT WHITE TEXT ON DARK BACKGROUNDS */
+.data-table th,
+.dashboard-header h1,
+.header-content h1,
+.btn,
+.back-btn,
+.logout-btn,
+.filter-btn,
+.mark-read-btn,
+.nav-item.active,
+.status-badge,
+.status-active,
+.status-faulty,
+.status-maintenance,
+.priority-high,
+.priority-medium,
+.priority-low,
+.type-critical,
+.type-warning,
+.type-success,
+.type-info,
+.battery-good,
+.battery-medium,
+.battery-low {
+  color: #ffffff !important;
+}
+
+/* SECONDARY TEXT */
+.text-secondary, .text-muted, .user-name, .stat-info p {
+  color: #374151 !important;
+}

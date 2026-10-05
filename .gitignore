@@ -5,3 +5,4 @@ dist/
 *.log
 "@ | Out-File -Encoding utf8 .gitignoreusers_db.json
 temp-react-app/
+backend/mongo-db-data/
